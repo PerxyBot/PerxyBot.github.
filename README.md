@@ -50,3 +50,6 @@ These Terms of Service may be updated or modified at any time. It is your respon
 If you have any questions or concerns regarding these Terms of Service or the Bot, please open a ticket at https://discord.gg/RThTPk4khz.
 
 By using Perxy Bot, you acknowledge that you have read, understood, and agreed to these Terms of Service. If you do not agree with these terms, please do not use the Bot.
+
+![image](https://github.com/PerxyBot/PerxyBot.github.io/assets/146001351/b0b03783-cc1d-4327-904a-7d791825e076)
+
