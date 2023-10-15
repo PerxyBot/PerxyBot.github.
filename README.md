@@ -139,5 +139,4 @@
             dropdown.classList.toggle('open');
         });
     </script>
-</body>
-</html>
+
