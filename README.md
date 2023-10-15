@@ -14,10 +14,11 @@
         .header {
             background-color: #8637f4;
             padding: 20px;
-            text-align: right; /* Align the header to the right */
+            text-align: center;
         }
         .header h1 {
             color: white;
+            margin: 0; /* Remove margin to center text */
         }
         .container {
             background-color: white;
@@ -31,9 +32,9 @@
             text-align: center;
         }
         .dropdown {
-            position: absolute; /* Change to absolute positioning */
-            top: 10px; /* Move the dropdown to the top */
-            right: 10px; /* Move the dropdown to the right */
+            position: absolute;
+            top: 10px;
+            right: 10px;
         }
         .dropdown-content {
             display: none;
@@ -57,7 +58,7 @@
         .button {
             background-color: black;
             color: white;
-            padding: 10px 40px; /* Adjusted padding for width */
+            padding: 10px 40px;
             border-radius: 20px;
             text-decoration: none;
             margin: 10px;
@@ -86,29 +87,30 @@
             font-size: 16px;
         }
         .bot-icon {
-            text-align: center;
-        }
-        .bot-icon img {
-            width: 100%; /* Make the bot icon take the full width */
+            position: absolute;
+            top: 20px; /* Adjust the top position */
+            left: 20px; /* Adjust the left position */
+            width: 50px; /* Make the bot icon small */
         }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Your Bot Name</h1>
-        <div class="dropdown">
-            <button class="button">Menu &#9660;</button>
-            <div class="dropdown-content">
-                <a href="https://discord.gg/support-server" target="_blank">Support Server</a>
-                <a href="https://example.com" target="_blank">Website</a>
+        <div class="button-container">
+            <div class="dropdown">
+                <button class="button">Menu &#9660;</button>
+                <div class="dropdown-content">
+                    <a href="https://discord.gg/support-server" target="_blank">Support Server</a>
+                    <a href="https://example.com" target="_blank">Website</a>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="bot-icon">
-            <img src="C67F203A-E0A0-4625-8862-B956CEDA5FBD.png" alt="Bot Icon">
-            <a href="https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" class="button">Invite</a>
+            <img src="bot-icon.png" alt="Bot Icon">
         </div>
         <div id="introduction" class="section">
             <h2>Introduction</h2>
