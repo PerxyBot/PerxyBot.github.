@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +5,13 @@
     <title>Your Bot Name</title>
     <style>
         body {
-            background-color: #8637f4;
+            background-color: #f4f4f4;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
         .header {
-            background-color: #8637f4;
+            background-color: #7289da;
             padding: 20px;
             text-align: center;
         }
@@ -54,7 +53,7 @@
             display: block;
         }
         .button {
-            background-color: black;
+            background-color: #7289da;
             color: white;
             padding: 10px 20px;
             border-radius: 20px;
@@ -63,7 +62,7 @@
             transition: background-color 0.3s ease;
         }
         .button:hover {
-            background-color: #8637f4;
+            background-color: #4e5d94;
         }
         .section {
             padding: 20px;
@@ -93,8 +92,7 @@
     </div>
     
     <div class="button-container">
-        <a href="https://discord.gg/support-server" class="button">Support Server</a>
-        <a href="https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" class="button">Invite Bot</a>
+        <a href="https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" class="button">Invite</a>
     </div>
 </body>
 </html>
