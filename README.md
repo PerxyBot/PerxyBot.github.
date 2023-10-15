@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,6 +30,29 @@
         .button-container {
             text-align: center;
         }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            border-radius: 10px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: left;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
         .button {
             background-color: black;
             color: white;
@@ -44,19 +68,19 @@
         .section {
             padding: 20px;
         }
-        .section a {
-            color: black;
-        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Your Bot Name</h1>
         <div class="button-container">
-            <a href="#introduction" class="button">Introduction</a>
-            <a href="#tos" class="button">Terms of Service</a>
-            <a href="https://discord.gg/support-server" class="button">Support Server</a>
-            <a href="https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" class="button">Invite Bot</a>
+            <div class="dropdown">
+                <button class="button">Menu &#9660;</button>
+                <div class="dropdown-content">
+                    <a href="#introduction">Introduction</a>
+                    <a href="https://example.com" target="_blank">Website</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -66,30 +90,11 @@
             <h2>Introduction</h2>
             <p>Your bot introduction goes here.</p>
         </div>
-
-        <div id="tos" class="section">
-            <h2>Terms of Service</h2>
-            <p>Your bot's terms of service go here.</p>
-        </div>
     </div>
-
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+    
+    <div class="button-container">
+        <a href="https://discord.gg/support-server" class="button">Support Server</a>
+        <a href="https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" class="button">Invite Bot</a>
+    </div>
 </body>
 </html>
