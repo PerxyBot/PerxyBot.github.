@@ -85,6 +85,9 @@
         .feature-text {
             font-size: 16px;
         }
+        .terms-of-service {
+            margin-top: 40px; /* Add space between Features and Terms of Service */
+        }
     </style>
 </head>
 <body>
@@ -94,20 +97,29 @@
             <div class="dropdown">
                 <button class="button">Menu &#9660;</button>
                 <div class="dropdown-content">
+                    <a href="#suggested-features">Suggested Features</a>
+                    <a href="#introduction">Introduction</a>
+                    <a href="#terms-of-service">Terms of Service</a>
                     <a href="https://discord.gg/support-server" target="_blank">Support Server</a>
-                    <a href="https://example.com" target="_blank">Website</a>
                 </div>
             </div>
-            <a href="https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" class="button">Invite the Bot</a>
         </div>
     </div>
 
     <div class="container">
+        <div id="suggested-features" class="section">
+            <h2>Suggested Features</h2>
+            <p>These are some suggested features for your bot.</p>
+        </div>
         <div id="introduction" class="section">
             <h2>Introduction</h2>
             <p>Your bot introduction goes here.</p>
         </div>
-        
+        <div id="terms-of-service" class="section terms-of-service">
+            <h2>Terms of Service</h2>
+            <p>Your terms of service go here.</p>
+        </div>
+
         <div class="section features">
             <h2>Features</h2>
             <div class="feature">
