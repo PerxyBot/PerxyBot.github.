@@ -120,22 +120,6 @@
             <p>Your terms of service go here.</p>
         </div>
 
-        <div class="section features">
-            <h2>Features</h2>
-            <div class="feature">
-                <div class="feature-icon">&#10003;</div>
-                <div class="feature-text">Feature 1: Description of feature 1.</div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">&#10003;</div>
-                <div class="feature-text">Feature 2: Description of feature 2.</div>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">&#10003;</div>
-                <div class="feature-text">Feature 3: Description of feature 3.</div>
-            </div>
-        </div>
-    </div>
 
     <script>
         // Add JavaScript to close the dropdown when clicking on the body
