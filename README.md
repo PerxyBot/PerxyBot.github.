@@ -45,7 +45,7 @@
             z-index: 1;
             text-align: left;
         }
-        .dropdown:hover .dropdown-content {
+        .dropdown.open .dropdown-content {
             display: block;
         }
         .dropdown-content a {
@@ -70,9 +70,6 @@
         .section {
             padding: 20px;
         }
-        .rating {
-            font-size: 24px;
-        }
         .features {
             margin: 20px 0;
         }
@@ -87,6 +84,9 @@
         }
         .feature-text {
             font-size: 16px;
+        }
+        .bot-icon {
+            text-align: center;
         }
     </style>
 </head>
@@ -105,13 +105,13 @@
     </div>
 
     <div class="container">
-        <img src="bot-icon.png" alt="Bot Icon" style="display: block; margin: 0 auto;">
+        <div class="bot-icon">
+            <img src="bot-icon.png" alt="Bot Icon" style="display: block; margin: 0 auto;">
+            <a href="https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" class="button">Invite</a>
+        </div>
         <div id="introduction" class="section">
             <h2>Introduction</h2>
             <p>Your bot introduction goes here.</p>
-            <div class="rating">
-                &#9733;&#9733;&#9733;&#9733;&#9733;
-            </div>
         </div>
         
         <div class="section features">
@@ -130,9 +130,24 @@
             </div>
         </div>
     </div>
-    
-    <div class="button-container">
-        <a href="https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" class="button">Invite</a>
-    </div>
+
+    <script>
+        // Add JavaScript to close the dropdown when clicking on the body
+        document.body.addEventListener('click', function(event) {
+            if (event.target.classList.contains('button') || event.target.classList.contains('dropdown-content')) {
+                return;
+            }
+            const dropdown = document.querySelector('.dropdown');
+            dropdown.classList.remove('open');
+        });
+
+        // Add JavaScript to toggle the dropdown when the button is clicked
+        const dropdownButton = document.querySelector('.button');
+        const dropdown = document.querySelector('.dropdown');
+        dropdownButton.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent closing on button click
+            dropdown.classList.toggle('open');
+        });
+    </script>
 </body>
 </html>
