@@ -10,6 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            cursor: pointer;
         }
         .header {
             background-color: #8637f4;
@@ -61,6 +62,7 @@
             text-decoration: none;
             margin: 10px;
             transition: background-color 0.3s ease;
+            display: inline-block;
         }
         .button:hover {
             background-color: #8637f4;
@@ -71,6 +73,21 @@
         .rating {
             font-size: 24px;
         }
+        .features {
+            margin: 20px 0;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .feature-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .feature-text {
+            font-size: 16px;
+        }
     </style>
 </head>
 <body>
@@ -80,7 +97,6 @@
             <div class="dropdown">
                 <button class="button">Menu &#9660;</button>
                 <div class="dropdown-content">
-                    <a href="#introduction">Introduction</a>
                     <a href="https://discord.gg/support-server" target="_blank">Support Server</a>
                     <a href="https://example.com" target="_blank">Website</a>
                 </div>
@@ -95,6 +111,22 @@
             <p>Your bot introduction goes here.</p>
             <div class="rating">
                 &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+        </div>
+        
+        <div class="section features">
+            <h2>Features</h2>
+            <div class="feature">
+                <div class="feature-icon">&#10003;</div>
+                <div class="feature-text">Feature 1: Description of feature 1.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">&#10003;</div>
+                <div class="feature-text">Feature 2: Description of feature 2.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">&#10003;</div>
+                <div class="feature-text">Feature 3: Description of feature 3.</div>
             </div>
         </div>
     </div>
