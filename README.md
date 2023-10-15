@@ -15,7 +15,7 @@
         .header {
             background-color: #8637f4;
             padding: 20px;
-            text-align: center;
+            text-align: right; /* Align the header to the right */
         }
         .header h1 {
             color: white;
@@ -32,8 +32,9 @@
             text-align: center;
         }
         .dropdown {
-            position: relative;
-            display: inline-block;
+            position: absolute; /* Change to absolute positioning */
+            top: 10px; /* Move the dropdown to the top */
+            right: 10px; /* Move the dropdown to the right */
         }
         .dropdown-content {
             display: none;
@@ -88,25 +89,26 @@
         .bot-icon {
             text-align: center;
         }
+        .bot-icon img {
+            width: 100%; /* Make the bot icon take the full width */
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Your Bot Name</h1>
-        <div class="button-container">
-            <div class="dropdown">
-                <button class="button">Menu &#9660;</button>
-                <div class="dropdown-content">
-                    <a href="https://discord.gg/support-server" target="_blank">Support Server</a>
-                    <a href="https://example.com" target="_blank">Website</a>
-                </div>
+        <div class="dropdown">
+            <button class="button">Menu &#9660;</button>
+            <div class="dropdown-content">
+                <a href="https://discord.gg/support-server" target="_blank">Support Server</a>
+                <a href="https://example.com" target="_blank">Website</a>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="bot-icon">
-            <img src="bot-icon.png" alt="Bot Icon" style="display: block; margin: 0 auto;">
+            <img src="bot-icon.png" alt="Bot Icon">
             <a href="https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" class="button">Invite</a>
         </div>
         <div id="introduction" class="section">
