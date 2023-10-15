@@ -18,7 +18,6 @@
         }
         .header h1 {
             color: white;
-            margin: 0; /* Remove margin to center text */
         }
         .container {
             background-color: white;
@@ -86,12 +85,6 @@
         .feature-text {
             font-size: 16px;
         }
-        .bot-icon {
-            position: absolute;
-            top: 20px; /* Adjust the top position */
-            left: 20px; /* Adjust the left position */
-            width: 50px; /* Make the bot icon small */
-        }
     </style>
 </head>
 <body>
@@ -105,13 +98,11 @@
                     <a href="https://example.com" target="_blank">Website</a>
                 </div>
             </div>
+            <a href="https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" class="button">Invite the Bot</a>
         </div>
     </div>
 
     <div class="container">
-        <div class="bot-icon">
-            <img src="C67F203A-E0A0-4625-8862-B956CEDA5FBD.png" alt="Bot Icon">
-        </div>
         <div id="introduction" class="section">
             <h2>Introduction</h2>
             <p>Your bot introduction goes here.</p>
