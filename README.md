@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,13 +6,13 @@
     <title>Your Bot Name</title>
     <style>
         body {
-            background-color: #f4f4f4;
+            background-color: #8637f4;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
         .header {
-            background-color: #7289da;
+            background-color: #8637f4;
             padding: 20px;
             text-align: center;
         }
@@ -53,7 +54,7 @@
             display: block;
         }
         .button {
-            background-color: #7289da;
+            background-color: black;
             color: white;
             padding: 10px 20px;
             border-radius: 20px;
@@ -62,10 +63,13 @@
             transition: background-color 0.3s ease;
         }
         .button:hover {
-            background-color: #4e5d94;
+            background-color: #8637f4;
         }
         .section {
             padding: 20px;
+        }
+        .rating {
+            font-size: 24px;
         }
     </style>
 </head>
@@ -77,6 +81,7 @@
                 <button class="button">Menu &#9660;</button>
                 <div class="dropdown-content">
                     <a href="#introduction">Introduction</a>
+                    <a href="https://discord.gg/support-server" target="_blank">Support Server</a>
                     <a href="https://example.com" target="_blank">Website</a>
                 </div>
             </div>
@@ -88,6 +93,9 @@
         <div id="introduction" class="section">
             <h2>Introduction</h2>
             <p>Your bot introduction goes here.</p>
+            <div class="rating">
+                &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
         </div>
     </div>
     
