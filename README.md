@@ -110,7 +110,7 @@
 
     <div class="container">
         <div class="bot-icon">
-            <img src="bot-icon.png" alt="Bot Icon">
+            <img src="C67F203A-E0A0-4625-8862-B956CEDA5FBD.png" alt="Bot Icon">
         </div>
         <div id="introduction" class="section">
             <h2>Introduction</h2>
