@@ -1,55 +1,84 @@
-**Perxy Bot - Terms of Service**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bot's Website</title>
+    <style>
+        body {
+            background-color: purple;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-**Last Updated: September 26, 2023**
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-**Acceptance of Terms**:
+        header {
+            background-color: #7289DA;
+            padding: 20px;
+        }
 
-By using Perxy Bot ("the Bot"), you agree to abide by these Terms of Service. If you do not agree to these terms, please refrain from using the Bot.
+        header h1 {
+            margin: 0;
+        }
 
-**Eligibility**:
-   
-You must be at least 13 years old to use the Bot. If you are under 13, you may only use the Bot with parental or legal guardian consent.
+        nav {
+            text-align: right;
+        }
 
-**Intents**:
-    
-Perxy Bot is equipped with the Discord message and member intents to enhance its functionality. By using the Bot, you acknowledge and consent to the use of these intents.
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
 
-**Opt-Out**:
+        .button {
+            background-color: #7289DA;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
-If you wish to opt out of the message or member intents, please contact our support team by opening a ticket on our support server https://discord.gg/RThTPk4khz. Our support team will assist you in this process.
+        .section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Bot's Name</h1>
+            <nav>
+                <a href="#introduction">Introduction</a>
+                <a href="#tos">Terms of Service</a>
+                <a class="button" href="https://discord.gg/your-support-server-invite-link" target="_blank">Support Server</a>
+                <a class="button" href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" target="_blank">Invite Bot</a>
+            </nav>
+        </div>
+    </header>
 
-**Data Collection**:
-  
-The Bot may collect and store user data as required for its intended purpose. 
-The data that is getting collected
-will automatically be deleted every 30 minutes.
-Please refer to our Privacy Policy for details on data handling and protection.
-
-**Compliance**:
-   
-You agree to comply with Discord's Terms of Service and Guidelines, as well as these Terms of Service, while using the Bot.
-
-**Prohibited Actions**:
-
-You must not engage in any activities that violate Discord's or our own policies, including but not limited to harassment, impersonation, spamming, or any unlawful actions.
-
-**No Warranty**:
-  
-The Bot is provided "as is" without any warranties, express or implied. Perxy makes no guarantees regarding the accuracy, availability, or reliability of the Bot.
-
-**Limitation of Liability**:
-  
-Perxy is not liable for any damages, losses, or harm resulting from the use or inability to use the Bot.
-
-**Changes to Terms**
-
-These Terms of Service may be updated or modified at any time. It is your responsibility to review them periodically.
-
-**Contact Information**
-
-If you have any questions or concerns regarding these Terms of Service or the Bot, please open a ticket at https://discord.gg/RThTPk4khz.
-
-By using Perxy Bot, you acknowledge that you have read, understood, and agreed to these Terms of Service. If you do not agree with these terms, please do not use the Bot.
-
-![image](https://github.com/PerxyBot/PerxyBot.github.io/assets/146001351/b0b03783-cc1d-4327-904a-7d791825e076)
-
+    <div class="container">
+        <section id="introduction" class="section">
+            <h2>Introduction</h2>
+            <p>Provide a detailed introduction to your Discord bot here.</p>
+        </section>
+        <section id="tos" class="section">
+            <h2>Terms of Service</h2>
+            <p>Include your terms of service here. Make sure to outline the rules and guidelines users must follow when using your bot.</p>
+        </section>
+    </div>
+</body>
+</html>
