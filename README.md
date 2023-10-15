@@ -57,7 +57,7 @@
         .button {
             background-color: black;
             color: white;
-            padding: 10px 20px;
+            padding: 10px 40px; /* Adjusted padding for width */
             border-radius: 20px;
             text-decoration: none;
             margin: 10px;
