@@ -107,7 +107,7 @@
 
     <div class="container">
         <div class="bot-icon">
-            <img src="https://cdn.discordapp.com/icons/1138865226675146812/f7d38b40624991658c5f8c5cf6c501d7.png?size=1024" alt="Bot Icon">
+            <img src="C67F203A-E0A0-4625-8862-B956CEDA5FBD.png" alt="Bot Icon">
             <a href="https://discordapp.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot&permissions=YOUR_PERMISSIONS" class="button">Invite</a>
         </div>
         <div id="introduction" class="section">
